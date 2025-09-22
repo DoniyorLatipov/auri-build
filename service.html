@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/service.min.css" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/swiper-bundle.min.js" defer></script>
+
+    <script src="js/service/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <nav class="header__programmes-mobi-nav programmes-mobi-nav desktop-hide">
+      <h2 class="programmes-mobi-heading header-mobi-title">Программы</h2>
+      <ul class="programmes-mobi-list">
+        <li class="programmes-mobi-list__group">
+          <h3 class="programmes-mobi-list__title header-mobi-subtitle">Для дошкольников</h3>
+          <ul class="programmes-mobi-list__items">
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=neurostart&price=5400">Нейростарт</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=preSchool1&price=5400">Подготовка к школе 1 уровень</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=preSchool2&price=5400">Подготовка к школе 2 уровень</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=reading&price=5600">Научиться читать + Каллиграфия</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=math&price=5400">Ментальная арифметика</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=english&price=5600">Английский язык</a>
+            </li>
+          </ul>
+        </li>
+        <li class="programmes-mobi-list__spliter"></li>
+        <li class="programmes-mobi-list__group">
+          <h3 class="programmes-mobi-list__title header-mobi-subtitle">Для школьников</h3>
+          <ul class="programmes-mobi-list__items">
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=schoolMental&price=5400">Ментальная арифметика</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=schoolMath&price=5600">Школьная математика</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=schoolRussian&price=5600">
+                Русский язык на 5+ Каллиграфия
+              </a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=schoolSmart&price=5600">Smartyчтение + Мнемотехника</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=shoolEnglish&price=5600">Английский язык</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=schoolReading&price=5600">Скорочтение + Каллиграфия</a>
+            </li>
+            <li class="programmes-mobi-list__item header-mobi-item">
+              <a href="service.html?program=schoolVpr&price=5400">Подготовка в ВПР</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <nav class="header__main-nav main-nav">
+      <ul class="main-nav__main-list">
+        <li>
+          <h2 class="main-nav__title header-mobi-title">Программы</h2>
+          <ul class="main-nav__list">
+            <li
+              class="main-nav__item header-mobi-subtitle main-nav__btn"
+              onclick="document.getElementById('preschoolers').classList.add('active')"
+            >
+              Для дошкольников
+            </li>
+            <li
+              class="main-nav__item main-nav__btn header-mobi-subtitle"
+              onclick="document.getElementById('schoolers').classList.add('active')"
+            >
+              Для школьников
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__spliter header-mobi-spliter"></li>
+        <li>
+          <h2 class="main-nav__title header-mobi-title">информация</h2>
+          <ul class="main-nav__list">
+            <li
+              class="main-nav__item main-nav__btn header-mobi-subtitle"
+              onclick="document.getElementById('about').classList.add('active')"
+            >
+              О нас
+            </li>
+            <li class="main-nav__item header-mobi-subtitle">Акции</li>
+            <li class="main-nav__item header-mobi-subtitle">Филиалы</li>
+          </ul>
+        </li>
+        <li class="main-nav__spliter header-mobi-spliter"></li>
+        <li>
+          <h2 class="main-nav__title header-mobi-title">Адреса филиалов</h2>
+          <ul class="main-nav__list">
+            <li class="main-nav__item header-mobi-item">пр-т Ленина, 21, офис 309</li>
+            <li class="main-nav__item header-mobi-item">ул. Университетская, 39</li>
+            <li class="main-nav__item header-mobi-item">ул. Семёна Билецкого, 6</li>
+          </ul>
+        </li>
+        <li class="main-nav__spliter header-mobi-spliter"></li>
+        <li class="main-nav__section-contacts">
+          <a href="#" class="main-nav__link" width="24" height="24">
+            <img src="images/phone.svg" alt="Телефон:" />
+            8 800 800-80-80
+          </a>
+          <a ref="#" class="main-nav__link main-nav__link--underline" width="24" height="24">
+            <img src="images/email.svg" alt="Почта" />
+            auri@surgut.ru
+          </a>
+        </li>
+        <li class="main-nav__spliter header-mobi-spliter"></li>
+        <li class="main-nav__section-icons">
+          <img src="images/telegram.svg" alt="Telegram" width="32" height="32" />
+          <a href="https://wa.me/79026903370" target="_blank">
+            <img src="images/whatsapp.svg" alt="WhatsApp" width="32" height="32" />
+          </a>
+          <a href="https://vk.com/detskiy_centr_surgut" target="_blank" rel="noopener noreferrer">
+            <img src="images/vk.svg" alt="VK" width="32" height="32" />
+          </a>
+        </li>
+      </ul>
+      <nav class="main-nav__section" id="preschoolers">
+        <div
+          class="main-nav__section-heading header-mobi-subtitle"
+          onclick="document.getElementById('preschoolers').classList.remove('active')"
+        >
+          Для дошкольников
+        </div>
+        <ul class="main-nav__section-list">
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=neurostart&price=5400">Нейростарт</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=preSchool1&price=5400">Подготовка к школе 1 уровень</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=preSchool2&price=5400">Подготовка к школе 2 уровень</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=reading&price=5600">Научиться читать + Каллиграфия</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=math&price=5400">Ментальная арифметика</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=english&price=5600">Английский язык</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-nav__section" id="schoolers">
+        <div
+          class="main-nav__section-heading header-mobi-subtitle"
+          onclick="document.getElementById('schoolers').classList.remove('active')"
+        >
+          Для школьников
+        </div>
+        <ul class="main-nav__section-list">
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=schoolMental&price=5400">Ментальная арифметика</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=schoolMath&price=5600">Школьная математика</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=schoolRussian&price=5600">
+              Русский язык на 5+ Каллиграфия
+            </a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=schoolSmart&price=5600">Smartyчтение + Мнемотехника</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=shoolEnglish&price=5600">Английский язык</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=schoolReading&price=5600">Скорочтение + Каллиграфия</a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a href="service.html?program=schoolVpr&price=5400">Подготовка в ВПР</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-nav__section" id="about">
+        <div
+          class="main-nav__section-heading header-mobi-subtitle"
+          onclick="document.getElementById('about').classList.remove('active')"
+        >
+          О нас
+        </div>
+        <ul class="main-nav__section-list">
+          <li class="main-nav__section-item header-mobi-item">
+            <a
+              class="header__about-nav-link js-scroll"
+              onclick="document.querySelector('.header__main-nav').classList.remove('active'); document.querySelector('.header__burger').classList.remove('active')"
+              href="#teachers"
+            >
+              Педагоги
+            </a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a
+              class="header__about-nav-link js-scroll"
+              onclick="document.querySelector('.header__main-nav').classList.remove('active'); document.querySelector('.header__burger').classList.remove('active')"
+              href="#comments"
+            >
+              Отзывы
+            </a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a
+              class="header__about-nav-link js-scroll"
+              onclick="document.querySelector('.header__main-nav').classList.remove('active'); document.querySelector('.header__burger').classList.remove('active')"
+              href="#affiliates"
+            >
+              Филиалы
+            </a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a
+              class="header__about-nav-link js-scroll"
+              onclick="document.querySelector('.header__main-nav').classList.remove('active'); document.querySelector('.header__burger').classList.remove('active')"
+              href="#contacts"
+            >
+              Контакты
+            </a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a
+              class="header__about-nav-link js-scroll"
+              onclick="document.querySelector('.header__main-nav').classList.remove('active'); document.querySelector('.header__burger').classList.remove('active')"
+              href="#license"
+            >
+              Лицензия
+            </a>
+          </li>
+          <li class="main-nav__section-item header-mobi-item">
+            <a
+              class="header__about-nav-link js-scroll"
+              onclick="document.querySelector('.header__main-nav').classList.remove('active'); document.querySelector('.header__burger').classList.remove('active');"
+              href="#methods"
+            >
+              Методика
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="header__content">
+          <div class="header__left">
+            <a href="/">
+              <picture class="header__picture">
+                <source srcset="images/Logo-mini.svg" media="(max-width: 1250px)" />
+                <img
+                  src="images/Logo.svg"
+                  alt="АУРИ - школа для детей"
+                  height="40"
+                  width="160"
+                  class="header__image"
+                />
+              </picture>
+            </a>
+            <div class="header__programmes">
+              <button
+                type="button"
+                class="header__courses-button orange-button button-icon"
+                onclick="this.classList.toggle('active');document.querySelector('.header__programmes-nav').classList.toggle('active'); document.querySelector('.header__programmes-mobi-nav').classList.toggle('active');"
+              >
+                <img width="24" height="24" src="images/courses.svg" alt="Иконка программ" />
+                <img
+                  src="images/x-white.svg"
+                  alt="закрыть программы"
+                  width="24"
+                  height="24"
+                  class="active-img"
+                />
+                Программы
+              </button>
+              <nav class="header__programmes-nav mobile-hide">
+                <ul class="programmes-list">
+                  <li class="programmes-list__group">
+                    <h3 class="programmes-list__title">Для дошкольников</h3>
+                    <ul class="programmes-list__items">
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=neurostart&price=5400">Нейростарт</a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=preSchool1&price=5400">
+                          Подготовка к школе 1 уровень
+                        </a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=preSchool2&price=5400">
+                          Подготовка к школе 2 уровень
+                        </a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=reading&price=5600">
+                          Научиться читать + Каллиграфия
+                        </a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=math&price=5400">Ментальная арифметика</a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=english&price=5600">Английский язык</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="programmes-list__spliter"></li>
+                  <li class="programmes-list__group">
+                    <h3 class="programmes-list__title">Для школьников</h3>
+                    <ul class="programmes-list__items">
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=schoolMental&price=5400">
+                          Ментальная арифметика
+                        </a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=schoolMath&price=5600">Школьная математика</a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=schoolRussian&price=5600">
+                          Русский язык на 5+ Каллиграфия
+                        </a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=schoolSmart&price=5600">
+                          Smartyчтение + Мнемотехника
+                        </a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=shoolEnglish&price=5600">Английский язык</a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=schoolReading&price=5600">
+                          Скорочтение + Каллиграфия
+                        </a>
+                      </li>
+                      <li class="programmes-list__item">
+                        <a href="service.html?program=schoolVpr&price=5400">Подготовка в ВПР</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <nav class="header__nav mobile-hide">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <button
+                    type="button"
+                    onclick="this.classList.toggle('active'); document.querySelector('.header__about-nav').classList.toggle('active');"
+                    class="header__nav-link button-icon about-button"
+                  >
+                    О нас
+                    <img src="images/arrow-down.svg" alt="open menu" class="about-button__arrow" />
+                  </button>
+                  <nav class="header__about-nav">
+                    <ul class="header__about-nav-list">
+                      <li class="header__about-nav-item">
+                        <a
+                          class="header__about-nav-link js-scroll"
+                          onclick="document.querySelector('.header__about-nav').classList.remove('active')"
+                          href="#teachers"
+                        >
+                          Педагоги
+                        </a>
+                      </li>
+                      <li class="header__about-nav-item">
+                        <a
+                          class="header__about-nav-link js-scroll"
+                          onclick="document.querySelector('.header__about-nav').classList.remove('active')"
+                          href="#comments"
+                        >
+                          Отзывы
+                        </a>
+                      </li>
+                      <li class="header__about-nav-item">
+                        <a
+                          class="header__about-nav-link js-scroll"
+                          onclick="document.querySelector('.header__about-nav').classList.remove('active')"
+                          href="#affiliates"
+                        >
+                          Филиалы
+                        </a>
+                      </li>
+                      <li class="header__about-nav-item">
+                        <a
+                          class="header__about-nav-link js-scroll"
+                          onclick="document.querySelector('.header__about-nav').classList.remove('active')"
+                          href="#contacts"
+                        >
+                          Контакты
+                        </a>
+                      </li>
+                      <li class="header__about-nav-item">
+                        <a
+                          class="header__about-nav-link js-scroll"
+                          onclick="document.querySelector('.header__about-nav').classList.remove('active')"
+                          href="#license"
+                        >
+                          Лицензия
+                        </a>
+                      </li>
+                      <li class="header__about-nav-item">
+                        <a
+                          class="header__about-nav-link js-scroll"
+                          onclick="document.querySelector('.header__about-nav').classList.remove('active')"
+                          href="#methods"
+                        >
+                          Методика
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link js-scroll" href="#promotion">Акции</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link js-scroll" href="#affiliates">Филиалы</a>
+                </li>
+              </ul>
+            </nav>
+            <a
+              href="tel:79026903370"
+              class="header__call-btn desktop-hide icon-button icon-button--transparent"
+            >
+              <img src="images/phone.svg" alt="Телефон" width="24" height="24" />
+            </a>
+            <div
+              class="header__burger desktop-hide"
+              onclick="this.classList.toggle('active'); document.querySelector('.header__main-nav').classList.toggle('active');"
+            >
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+          </div>
+          <div class="header__right mobile-hide">
+            <button
+              type="button"
+              class="header__feadback transparent-button button-icon modal-button"
+            >
+              Обратная связь
+            </button>
+            <button
+              type="button"
+              class="header__profile-btn orange-button button-icon modal-button"
+            >
+              <img src="images/profile.svg" alt="Иконка профиля" />
+              Профиль
+            </button>
+            <button type="button" class="header__icon-button icon-button modal-button">
+              <img src="images/bust.svg" alt="Усиления - иконка молнии" height="20" width="20" />
+            </button>
+            <button type="button" class="header__icon-button icon-button modal-button">
+              <img src="images/card.svg" alt="Иконка карзина" height="20" width="20" />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="intro section" id="intro">
+          <div class="intro__container">
+            <div class="intro__left">
+              <h1 class="intro__title" id="title"></h1>
+              <ul class="intro__benefits-list">
+                <li class="intro__benefit-item label label--orange">Школьники</li>
+                <li class="intro__benefit-item label label--orange">7-9 лет</li>
+                <li class="intro__benefit-item label label--orange">Группа 6-8 человек</li>
+                <li class="intro__benefit-item label label--orange">Группа 6-8 человек</li>
+                <li class="intro__benefit-item label label--orange">Урок 55 минут</li>
+              </ul>
+              <p class="intro__description">
+                Курс подходит детям, которые неплохо читают, но хотят улучшить технику чтения,
+                память, внимание.
+              </p>
+              <div class="intro__buttons mobile-hide">
+                <button type="button" class="intro__button transparent-button">
+                  Бесплатный урок
+                </button>
+                <div class="intro__subbuttons">
+                  <button type="button" class="intro__button orange-button button-icon">
+                    <img src="images/card-white.svg" alt="Карзина" width="20" height="20" />
+                    <span id="price">5 600 ₽</span>
+                  </button>
+                  <button type="button" class="icon-button icon-button--transparent">
+                    <img src="images/bust.svg" alt="Молния" width="24" height="24" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="intro__right">
+              <img
+                src="images/service-1.png"
+                alt="Дети улыбаються во время урока"
+                width="365"
+                height="225"
+                class="intro__image"
+              />
+              <div class="intro__buttons desktop-hide">
+                <button type="button" class="intro__button transparent-button">
+                  Бесплатный урок
+                </button>
+                <div class="intro__subbuttons">
+                  <button type="button" class="intro__button orange-button button-icon">
+                    <img src="images/card-white.svg" alt="Карзина" />
+                    5 600 ₽
+                  </button>
+                  <button type="button" class="icon-button transparent-button">
+                    <img src="images/bust.svg" alt="Молния" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="teacher section" id="teacher">
+          <div class="teacher__container section-container">
+            <h2 class="teacher__heading section-heading">Курс ведет</h2>
+            <div class="teacher__wrapper">
+              <article class="teacher__bio">
+                <img
+                  src="images/service-1-teacher.png"
+                  alt="Петрова Надежда Федоровна"
+                  class="teacher__img"
+                  width="390"
+                  height="200"
+                />
+                <div class="teacher__content">
+                  <h3 class="teacher__name article-heading">Петрова Надежда Федоровна</h3>
+                  <p class="teacher__description">
+                    Педагог по подготовке к школе, скорочтению и английскому языку. Общий стаж 25
+                    лет.
+                  </p>
+                  <div class="teacher__label label label--orange">SmartyЧтение + Мнемотехника</div>
+                </div>
+              </article>
+              <article class="teacher__license">
+                <div class="teacher__license-text">
+                  <h3 class="teacher__license-text article-heading">Лицензия и сертификаты</h3>
+                  <p class="teacher__license-description">
+                    Наши образовательные программы соответствуют стандартам школьного и дошкольного
+                    образования.
+                    <br />
+                    <br />
+                    Вы можете получить налоговый вычет и использовать материнский капитал для оплаты
+                    некоторых программ обучения.
+                  </p>
+                </div>
+                <img
+                  src="images/service-1-license.png"
+                  width="263"
+                  height="207"
+                  alt="Лицензия и сертификаты"
+                  class="teacher__license-img"
+                />
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="methods section" id="methods">
+          <div class="methods__container section-container">
+            <h2 class="methods__heading section-heading">Методика обучения</h2>
+
+            <div class="methods__slider">
+              <div class="methods__slider-wrapper swiper">
+                <div class="methods__slider-content swiper-wrapper swiper-wrapper--loop">
+                  <article class="methods__slide slide swiper-slide">
+                    <picture class="methods__slide-picture">
+                      <source
+                        srcset="images/service-1-method-1-mobi.png"
+                        media="(max-width: 1250px)"
+                      />
+                      <img
+                        src="images/service-1-method-1.png"
+                        alt="Кубок за победу"
+                        class="methods__slide-image"
+                        width="240"
+                        height="240"
+                      />
+                    </picture>
+                    <div class="methods__slide-content">
+                      <h3 class="methods__title article-heading">Геймификация</h3>
+                      <p class="methods__description">
+                        Вовлекаем в урок ребенка через увлекательный сюжет, игровые механики,
+                        задания и вознаграждения
+                      </p>
+                    </div>
+                  </article>
+                  <article class="methods__slide slide swiper-slide">
+                    <picture class="methods__slide-picture">
+                      <img
+                        src="images/service-1-method-2.png"
+                        alt="Книжка с увлекательной историей"
+                        class="methods__slide-image"
+                      />
+                    </picture>
+                    <div class="methods__slide-content">
+                      <h3 class="methods__title article-heading">Фирменные учебники и тетради</h3>
+                      <p class="methods__description">
+                        Яркие иллюстрации на качественной бумаге с интерактивами
+                      </p>
+                    </div>
+                  </article>
+                  <article class="methods__slide slide swiper-slide">
+                    <picture class="methods__slide-picture">
+                      <img
+                        src="images/service-1-method-3.png"
+                        alt="Ухоженная игрушечная лошадь"
+                        class="methods__slide-image"
+                      />
+                    </picture>
+                    <div class="methods__slide-content">
+                      <h3 class="methods__title article-heading">Просторные кабинеты</h3>
+                      <p class="methods__description">
+                        Уроки проходят в больших светлых проветриваемых кабинетах с интерактивным
+                        оборудованием
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="methods__slider-arrows slider-arrows">
+                <button
+                  type="button"
+                  class="methods__slider-arrow methods__slider-arrow--prev slide-arrow"
+                >
+                  <img src="images/arrow-left.svg" alt="Предыдущий слайд" width="28" height="28" />
+                </button>
+                <div class="methods__slider-dots slider-dots">
+                  <button
+                    type="button"
+                    class="methods__slider-dot slider-dot active"
+                    aria-label="Слайд 1"
+                  ></button>
+                  <button
+                    type="button"
+                    class="methods__slider-dot slider-dot"
+                    aria-label="Слайд 2"
+                  ></button>
+                  <button
+                    type="button"
+                    class="methods__slider-dot slider-dot"
+                    aria-label="Слайд 3"
+                  ></button>
+                </div>
+                <button
+                  type="button"
+                  class="methods__slider-arrow methods__slider-arrow--next slide-arrow"
+                >
+                  <img src="images/arrow-right.svg" alt="Следующий слайд" width="28" height="28" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="results section" id="results">
+          <div class="results__container section-container">
+            <h2 class="results__heading section-heading">Результаты</h2>
+            <ul class="results__list">
+              <li class="results__item">
+                <img
+                  src="images/result-mark.svg"
+                  height="40"
+                  width="40"
+                  w
+                  alt="Успешно"
+                  class="results__icon"
+                />
+                <p class="result__description">Ребенок будет читать в 3-4 раза быстрее</p>
+              </li>
+              <li class="results__item">
+                <img
+                  src="images/result-mark.svg"
+                  height="40"
+                  width="40"
+                  alt="Успешно"
+                  class="results__icon"
+                />
+                <p class="result__description">Улучшатся все виды памяти</p>
+              </li>
+              <li class="results__item">
+                <img
+                  src="images/result-mark.svg"
+                  height="40"
+                  width="40"
+                  alt="Успешно"
+                  class="results__icon"
+                />
+                <p class="result__description">
+                  Ребенок сможет с легкостью запоминать большие объемы текстовой информации
+                </p>
+              </li>
+              <li class="results__item">
+                <img
+                  src="images/result-mark.svg"
+                  height="40"
+                  width="40"
+                  alt="Успешно"
+                  class="results__icon"
+                />
+                <p class="result__description">У ребенка разовьется навык концентрации внимания</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="affiliates section" id="affiliates">
+          <div class="affiliates__container section-container">
+            <h2 class="affiliates__heading section-heading">Учитесь поближе к дому</h2>
+            <div class="affiliates__list">
+              <article class="affiliates__item affiliate">
+                <div class="affiliate__label label label--orange">осталось 5 мест</div>
+                <img
+                  src="images/affiliate-1.png"
+                  alt="пр-т Ленина, д. 21, офис 9"
+                  class="affiliate__image"
+                  height="180"
+                  width="380"
+                />
+                <div class="affiliate__content">
+                  <h3 class="affiliate__title article-heading">пр-т Ленина, д. 21, офис 9</h3>
+                  <div class="affiliate__buttons">
+                    <button type="button" class="affiliate__button orange-button button-icon">
+                      <img src="images/card-white.svg" alt="Карзина" width="20" height="20" />
+                      4 800 ₽
+                    </button>
+                    <button
+                      type="button"
+                      class="affiliate__button icon-button icon-button--transparent"
+                    >
+                      <img src="images/bust.svg" alt="Молния" width="24" height="24" />
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <article class="affiliates__item affiliate">
+                <div class="affiliate__label label label--orange">осталось 12 мест</div>
+                <img
+                  src="images/affiliate-2.png"
+                  alt="ул. Университетская, д. 39"
+                  class="affiliate__image"
+                  height="180"
+                  width="380"
+                />
+                <div class="affiliate__content">
+                  <h3 class="affiliate__title article-heading">ул. Университетская, д. 39</h3>
+                  <div class="affiliate__buttons">
+                    <button type="button" class="affiliate__button orange-button button-icon">
+                      <img src="images/card-white.svg" alt="Карзина" width="20" height="20" />
+                      4 800 ₽
+                    </button>
+                    <button
+                      type="button"
+                      class="affiliate__button icon-button icon-button--transparent"
+                    >
+                      <img src="images/bust.svg" alt="Молния" width="24" height="24" />
+                    </button>
+                  </div>
+                </div>
+              </article>
+              <article class="affiliates__item affiliate">
+                <div class="affiliate__label label label--orange">осталось 7 мест</div>
+                <img
+                  src="images/affiliate-3.png"
+                  alt="ул. Семена Билецкого, д. 6"
+                  class="affiliate__image"
+                  height="180"
+                  width="380"
+                />
+                <div class="affiliate__content">
+                  <h3 class="affiliate__title article-heading">ул. Семена Билецкого, д. 6</h3>
+                  <div class="affiliate__buttons">
+                    <button type="button" class="affiliate__button orange-button button-icon">
+                      <img src="images/card-white.svg" alt="Карзина" width="20" height="20" />
+                      4 800 ₽
+                    </button>
+                    <button
+                      type="button"
+                      class="affiliate__button icon-button icon-button--transparent"
+                    >
+                      <img src="images/bust.svg" alt="Молния" width="24" height="24" />
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="comments section section--slider" id="comments">
+          <div class="comments__container section-container">
+            <h2 class="comments__heading section-heading">Отзывы родителей</h2>
+            <div class="comments__slider">
+              <div class="comments__slider-wrapper wiper">
+                <div class="comments__slider-content swiper-wrapper swiper-wrapper--loop">
+                  <article class="commets__comment comment swiper-slide">
+                    <div class="comment__profile">
+                      <img
+                        src="images/comment-1.png"
+                        alt="Светлана Орлова"
+                        height="120"
+                        width="120"
+                        class="comment__profile-image"
+                      />
+                      <div class="comment__profile-info">
+                        <h4 class="comment__profile-name">Светлана Орлова</h4>
+                        <div class="comment__label label label--green">Мама Даши</div>
+                      </div>
+                    </div>
+                    <p class="comment__text">
+                      «Наша учительница Наталья Ивановна всегда находила время, чтобы объяснить
+                      что-то на групповых занятиях. Мы попали в группу крутых ребят. Я переживала,
+                      что мы не справимся, но грамотная поддержка педагога помогла»
+                    </p>
+                  </article>
+                  <article class="commets__comment comment swiper-slide">
+                    <div class="comment__profile">
+                      <img
+                        src="images/comment-2.png"
+                        alt="Светлана Орлова"
+                        height="120"
+                        width="120"
+                        class="comment__profile-image"
+                      />
+                      <div class="comment__profile-info">
+                        <h4 class="comment__profile-name">Светлана Орлова</h4>
+                        <div class="comment__label label label--blue">Мама Даши</div>
+                      </div>
+                    </div>
+                    <p class="comment__text">
+                      «Наша учительница Наталья Ивановна всегда находила время, чтобы объяснить
+                      что-то на групповых занятиях. Мы попали в группу крутых ребят. Я переживала,
+                      что мы не справимся, но грамотная поддержка педагога помогла»
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div class="comments__slider-arrows slider-arrows">
+                <button
+                  type="button"
+                  class="comments__slider-arrow comments__slider-arrow--prev slide-arrow slide-arrow--small"
+                >
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.7007 3L6.57567 9.77085C5.80806 10.4105 5.80806 11.5895 6.57567 12.2292L14.7007 19"
+                      stroke="#FF6A14"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+                <div class="comments__slider-dots slider-dots"></div>
+                <button
+                  type="button"
+                  class="comments__slider-arrow comments__slider-arrow--next slide-arrow slide-arrow--small"
+                >
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.29932 3L13.4243 9.77085C14.1919 10.4105 14.1919 11.5895 13.4243 12.2292L5.29932 19"
+                      stroke="#FF6A14"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="benefit section section--slider" id="benefit">
+          <div class="benefit__container section-container">
+            <div class="benefit__header">
+              <h2 class="benefit__heading section-heading">
+                Не оставим без знаний и навыков даже на бесплатном уроке
+              </h2>
+              <button class="benefit__button orange-button">Смотреть программы</button>
+            </div>
+            <article class="benefit__content">
+              <div class="benefit__description">
+                <h3 class="benefit__cost">0₽</h3>
+                <h3 class="benefit__title">Первый урок бесплатно</h3>
+              </div>
+              <ul class="benefit__list">
+                <li class="benefit__item">
+                  <img src="images/benefit-icon.svg" alt="Галочка" class="benefit__icon" />
+                  <span class="benefit__text">Познакомим с учителем и группой</span>
+                </li>
+                <li class="benefit__item">
+                  <img src="images/benefit-icon.svg" alt="Галочка" class="benefit__icon" />
+                  <span class="benefit__text">Поможем выполнить упражнения</span>
+                </li>
+                <li class="benefit__item">
+                  <img src="images/benefit-icon.svg" alt="Галочка" class="benefit__icon" />
+                  <span class="benefit__text">Познакомим родителя с методикой обучения</span>
+                </li>
+              </ul>
+              <picture class="benefit__picture">
+                <source srcset="images/benefit-image-mobi.png" media="(max-width: 1250px)" />
+                <img
+                  src="images/benefit-image.png"
+                  alt="Улыбающаяся девочка за уроками"
+                  height="145"
+                  width="145"
+                  class="benefit__image"
+                />
+              </picture>
+            </article>
+          </div>
+        </section>
+        <section class="courses section" id="courses">
+          <div class="courses__container section-container">
+            <h2 class="programmes__heading section-heading">Программы</h2>
+            <div class="courses__filters">
+              <div class="courses__filters-left">
+                <button type="button" class="courses__filter-btn button-icon active">
+                  <img src="images/puzzle.svg" alt="Пазл" width="24" height="24" />
+                  Дошкольники
+                </button>
+                <button type="button" class="courses__filter-btn button-icon">
+                  <img src="images/book.svg" alt="" />
+                  Школьники
+                </button>
+              </div>
+              <div class="courses__filters-right">
+                <span class="courses__filters-label">Филиал:</span>
+                <select cla ss="courses__filters-select">
+                  <option value="hide">Все</option>
+                  <option value="1">пр-т Ленина, д. 21, офис 9</option>
+                  <option value="2">ул. Университетская, д. 39</option>
+                  <option value="3">ул. Семена Билецкого, д. 6</option>
+                </select>
+              </div>
+            </div>
+            <div class="courses__courses-list">
+              <article class="courses__course-item course">
+                <div class="course__top-row">
+                  <h3 class="course__title">Ментальная арифметика</h3>
+                  <span class="course__popular-label">Популярно</span>
+                </div>
+                <p class="course__description">
+                  Курс улучшения умственных способностей ребенка, созданный на основе системы
+                  устного счета.
+                </p>
+                <div class="course__info-row">
+                  <span class="course__low-info">5-14 лет</span>
+                  <span class="course__low-info">8 занятий</span>
+                </div>
+                <div class="course__bottom-row">
+                  <div class="course__price-block">
+                    <span class="course__discount">Скидка 15%</span>
+                    <span class="course__price">5 400₽</span>
+                    <span class="course__old-price">8 900 ₽</span>
+                  </div>
+                  <div class="course__actions-block">
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button type="button" class="course__cart-btn orange-button button-icon">
+                        <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
+                        В корзину
+                      </button>
+                    </a>
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button
+                        type="button"
+                        class="course__icon-button button-icon active"
+                        onclick="this.classList.toggle('active')"
+                      >
+                        <svg
+                          width="20"
+                          height="21"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_31_314)">
+                            <path
+                              class="icon-fill"
+                              d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                              stroke="#FF6A14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_31_314">
+                              <rect
+                                width="20"
+                                height="20"
+                                fill="white"
+                                transform="translate(0 0.460449)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="courses__course-item course">
+                <div class="course__top-row">
+                  <h3 class="course__title">Скорочтение + Каллиграфия</h3>
+                  <span class="course__popular-label">Популярно</span>
+                </div>
+                <p class="course__description">
+                  Курс улучшения умственных способностей ребенка, созданный на основе системы
+                  устного счета.
+                </p>
+                <div class="course__info-row">
+                  <span class="course__low-info">6-8 лет</span>
+                  <span class="course__low-info">8 занятий</span>
+                </div>
+                <div class="course__bottom-row">
+                  <div class="course__price-block">
+                    <span class="course__discount">Скидка 15%</span>
+                    <span class="course__price">5 600₽</span>
+                    <span class="course__old-price">8 900 ₽</span>
+                  </div>
+                  <div class="course__actions-block">
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button type="button" class="course__cart-btn orange-button button-icon">
+                        <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
+                        В корзину
+                      </button>
+                    </a>
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button
+                        type="button"
+                        class="course__icon-button button-icon active"
+                        onclick="this.classList.toggle('active')"
+                      >
+                        <svg
+                          width="20"
+                          height="21"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_31_314)">
+                            <path
+                              class="icon-fill"
+                              d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                              stroke="#FF6A14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_31_314">
+                              <rect
+                                width="20"
+                                height="20"
+                                fill="white"
+                                transform="translate(0 0.460449)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="courses__course-item course">
+                <div class="course__top-row">
+                  <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                  <span class="course__popular-label">Популярно</span>
+                </div>
+                <p class="course__description">
+                  Курс улучшения умственных способностей ребенка, созданный на основе системы
+                  устного счета.
+                </p>
+                <div class="course__info-row">
+                  <span class="course__low-info">6-9 лет</span>
+                  <span class="course__low-info">8 занятий</span>
+                </div>
+                <div class="course__bottom-row">
+                  <div class="course__price-block">
+                    <span class="course__discount">Скидка 15%</span>
+                    <span class="course__price">5 600 ₽</span>
+                    <span class="course__old-price">8 900 ₽</span>
+                  </div>
+                  <div class="course__actions-block">
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button type="button" class="course__cart-btn orange-button button-icon">
+                        <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
+                        В корзину
+                      </button>
+                    </a>
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button
+                        type="button"
+                        class="course__icon-button button-icon active"
+                        onclick="this.classList.toggle('active')"
+                      >
+                        <svg
+                          width="20"
+                          height="21"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_31_314)">
+                            <path
+                              class="icon-fill"
+                              d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                              stroke="#FF6A14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_31_314">
+                              <rect
+                                width="20"
+                                height="20"
+                                fill="white"
+                                transform="translate(0 0.460449)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="courses__course-item course">
+                <div class="course__top-row">
+                  <h3 class="course__title">Раннее развитие "Тараторики"</h3>
+                  <span class="course__popular-label">Популярно</span>
+                </div>
+                <p class="course__description">
+                  Курс улучшения умственных способностей ребенка, созданный на основе системы
+                  устного счета.
+                </p>
+                <div class="course__info-row">
+                  <span class="course__low-info">3-4 лет</span>
+                  <span class="course__low-info">8 занятий</span>
+                </div>
+                <div class="course__bottom-row">
+                  <div class="course__price-block">
+                    <span class="course__discount">Скидка 15%</span>
+                    <span class="course__price">5 400 ₽</span>
+                    <span class="course__old-price">8 900 ₽</span>
+                  </div>
+                  <div class="course__actions-block">
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button type="button" class="course__cart-btn orange-button button-icon">
+                        <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
+                        В корзину
+                      </button>
+                    </a>
+                    <a href="service.html" target="_blank" rel="noopener noreferrer">
+                      <button
+                        type="button"
+                        class="course__icon-button button-icon active"
+                        onclick="this.classList.toggle('active')"
+                      >
+                        <svg
+                          width="20"
+                          height="21"
+                          viewBox="0 0 20 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_31_314)">
+                            <path
+                              class="icon-fill"
+                              d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                              stroke="#FF6A14"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              fill="none"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_31_314">
+                              <rect
+                                width="20"
+                                height="20"
+                                fill="white"
+                                transform="translate(0 0.460449)"
+                              />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="courses__more-btn-wrapper">
+              <a href="!#" target="_blank">
+                <button type="button" class="courses__more-btn transparent-button button-icon">
+                  Смотреть все
+                  <img src="images/more-arrow-right.svg" alt="Узнать больше" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__content">
+          <div class="footer__contacts-container">
+            <div class="footer__logo">
+              <img
+                src="images/Logo.svg"
+                alt="АУРИ — школа для детей"
+                class="footer__logo-img"
+                width="240"
+              />
+            </div>
+
+            <div class="footer__contacts">
+              <a href="tel:88008008080" class="footer__phone">8 800 800-80-80</a>
+              <a href="mailto:auri@surgut.ru" class="footer__email">auri@surgut.ru</a>
+            </div>
+
+            <div class="footer__socials">
+              <a href="#" class="footer__social footer__social--telegram" aria-label="Telegram">
+                <img src="images/telegram.svg" alt="Telegram" width="40" height="40" />
+              </a>
+              <a href="#" class="footer__social footer__social--whatsapp" aria-label="WhatsApp">
+                <img src="images/whatsapp.svg" alt="WhatsApp" width="40" height="40" />
+              </a>
+              <a href="#" class="footer__social footer__social--vk" aria-label="ВКонтакте">
+                <img src="images/vk.svg" alt="ВКонтакте" width="40" height="40" />
+              </a>
+            </div>
+
+            <ul class="footer__links">
+              <li class="footer__link-item">
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+              </li>
+              <li class="footer__link-item">
+                <a href="#" class="footer__link">
+                  Соглашение на обработку персональных данных метрическими программами
+                </a>
+              </li>
+              <li class="footer__link-item">
+                <a href="#" class="footer__link">Договор оферты</a>
+              </li>
+              <li class="footer__link-item">
+                <a href="#" class="footer__link">Правила возврата денежных средств</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__spliter"></div>
+          <div class="footer__right-container">
+            <div class="footer__locations">
+              <article class="location">
+                <h4 class="location__title">Филиал №1</h4>
+                <p class="location__address">пр-т Ленина, 21, офис 309</p>
+                <a href="#" class="location__link">Подробнее</a>
+              </article>
+
+              <article class="location">
+                <h4 class="location__title">Филиал №2</h4>
+                <p class="location__address">ул. Университетская, 39</p>
+                <a href="#" class="location__link">Подробнее</a>
+              </article>
+
+              <article class="location">
+                <h4 class="location__title">Филиал №3</h4>
+                <p class="location__address">ул. Семёна Билецкого, 6</p>
+                <a href="#" class="location__link">Подробнее</a>
+              </article>
+            </div>
+            <div class="footer__spliter"></div>
+            <div class="footer__nav">
+              <nav class="footer-menu">
+                <div class="footer-menu__column">
+                  <h4 class="footer-menu__title">О нас</h4>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Педагоги</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Отзывы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Филиалы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Контакты</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Лицензия</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Методика</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-menu__column">
+                  <h4 class="footer-menu__title">Для дошкольников</h4>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Подготовка к школе 1 уровень</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Подготовка к школе 2 уровень</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Раннее развитие "Тараторики"</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Ментальная арифметика</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Научиться читать + Каллиграфия</a>
+                    </li>
+                    <li class="footer-menu__item"><a href="#" class="footer-menu__link">ИЗО</a></li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Английский язык</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="footer-menu__column">
+                  <h4 class="footer-menu__title">Для школьников</h4>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Ментальная арифметика</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Мнемотехника + Мастерчтение</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Русский язык на 5+ Каллиграфия</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Smartчтение + Мнемотехника</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Английский язык</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="#" class="footer-menu__link">Скорочтение + Каллиграфия</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal" id="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button type="button" class="modal__close-btn" id="modalCloseButton">
+          <img src="images/x-orange.svg" alt="X" width="24" height="24" />
+        </button>
+        <h2 class="modal__title">Записать ребенка</h2>
+        <p class="modal__text">
+          Оставьте свои данные, мы свяжемся с вами для обсуждения расписания и загруженности групп
+        </p>
+        <form id="form" class="modal__form form">
+          <input type="hidden" name="access_key" value="6f10280c-e985-478e-a7c5-fff274f7ed97" />
+          <div class="form__container">
+            <select name="Филиал" id="affiliate" class="form__select" required>
+              <option value="hide">Выберите филиал</option>
+              <option value="пр-т Ленина, д. 21, офис 9">пр-т Ленина, д. 21, офис 9</option>
+              <option value="ул. Университетская, д. 39">ул. Университетская, д. 39</option>
+              <option value="ул. Семена Билецкого, д. 6">ул. Семена Билецкого, д. 6</option>
+            </select>
+            <select name="Возраст" id="age" class="form__select" required>
+              <option value="hide">Возраст ребёнка</option>
+              <option value="3-6">Дошкольники (3–6 лет)</option>
+              <option value="7-10">Школьники (7–10 лет)</option>
+            </select>
+            <input
+              type="text"
+              name="Имя родителя"
+              id="name"
+              placeholder="Имя родителя"
+              class="form__input"
+              required
+            />
+            <input
+              type="tel"
+              name="Номер телефона"
+              id="phone"
+              placeholder="+7 (999) 999-99-99"
+              class="form__input"
+              required
+            />
+            <button type="submit" class="form__submit orange-button">Оставить заявку</button>
+          </div>
+          <p class="form__links">
+            Отправляя данную форму, даю согласие на обработку моих персональных данных в
+            соответствии с
+            <a href="policy.html" class="form__link" target="_blank">
+              Политикой конфиденциальности
+            </a>
+            и
+            <a href="policy.html" class="form__link" target="_blank">
+              Соглашением на обработку персональных данных метрическими программи
+            </a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const program = params.get('program');
+      const price = params.get('price') ?? 5600;
+
+      const programmeNames = {
+        neurostart: 'Нейростарт',
+        preSchool1: 'Подготовка к школе 1 ступенька',
+        preSchool2: 'Подготовка к школе 2 ступенька',
+        reading: 'Научиться читать + Каллиграфия',
+        math: 'Ментальная арифметика',
+        english: 'Английский язык',
+        schoolMental: 'Ментальная арифметика',
+        schoolMath: 'Школьная математика',
+        schoolRussian: 'Русский язык на 5+ Каллиграфия',
+        schoolSmart: 'Smartyчтение + Мнемотехника',
+        shoolEnglish: 'Английский язык',
+        schoolReading: 'Скорочтение + Каллиграфия',
+        schoolVpr: 'Подготовка в ВПР',
+      };
+
+      const programmeName = programmeNames[program] || 'Smartyчтение + Мнемотехника';
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const titleEl = document.getElementById('title');
+        const priceEl = document.getElementById('price');
+
+        titleEl.textContent = programmeName;
+        priceEl.textContent = price;
+      });
+    </script>
+  </body>
+</html>
