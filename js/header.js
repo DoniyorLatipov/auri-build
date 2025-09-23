@@ -14,7 +14,7 @@ export default function createHeader() {
 
     const currentScroll = window.scrollY;
 
-    if (currentScroll > 10) {
+    if (currentScroll > 70) {
       header.classList.add('prepared');
     } else {
       header.classList.remove('prepared');

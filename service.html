@@ -114,13 +114,18 @@
         </li>
         <li class="main-nav__spliter header-mobi-spliter"></li>
         <li class="main-nav__section-contacts">
-          <a href="#" class="main-nav__link" width="24" height="24">
+          <a href="tel:+79026903370" class="main-nav__link" width="24" height="24">
             <img src="images/phone.svg" alt="Телефон:" />
-            8 800 800-80-80
+            +7 (902) 690-33-70
           </a>
-          <a ref="#" class="main-nav__link main-nav__link--underline" width="24" height="24">
+          <a
+            ref="mailto:hello@aurischool.ru"
+            class="main-nav__link main-nav__link--underline"
+            width="24"
+            height="24"
+          >
             <img src="images/email.svg" alt="Почта" />
-            auri@surgut.ru
+            hello@aurischool.ru
           </a>
         </li>
         <li class="main-nav__spliter header-mobi-spliter"></li>
@@ -442,7 +447,7 @@
               </ul>
             </nav>
             <a
-              href="tel:79026903370"
+              href="tel:+79026903370"
               class="header__call-btn desktop-hide icon-button icon-button--transparent"
             >
               <img src="images/phone.svg" alt="Телефон" width="24" height="24" />
@@ -1052,7 +1057,7 @@
                   </article>
                   <article class="courses__course-item course">
                     <div class="course__top-row">
-                      <h3 class="course__title">Скорочтение + Каллиграфия</h3>
+                      <h3 class="course__title">Нейростарт</h3>
                       <span class="course__popular-label">Популярно</span>
                     </div>
                     <p class="course__description">
@@ -1066,7 +1071,7 @@
                     <div class="course__bottom-row">
                       <div class="course__price-block">
                         <span class="course__discount">Скидка 15%</span>
-                        <span class="course__price">5 600₽</span>
+                        <span class="course__price">5 400₽</span>
                         <span class="course__old-price">8 900 ₽</span>
                       </div>
                       <div class="course__actions-block">
@@ -1123,7 +1128,7 @@
                   </article>
                   <article class="courses__course-item course">
                     <div class="course__top-row">
-                      <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                      <h3 class="course__title">Подготовка к школе 1 уровень</h3>
                       <span class="course__popular-label">Популярно</span>
                     </div>
                     <p class="course__description">
@@ -1137,7 +1142,7 @@
                     <div class="course__bottom-row">
                       <div class="course__price-block">
                         <span class="course__discount">Скидка 15%</span>
-                        <span class="course__price">5 600 ₽</span>
+                        <span class="course__price">5 400 ₽</span>
                         <span class="course__old-price">8 900 ₽</span>
                       </div>
                       <div class="course__actions-block">
@@ -1194,7 +1199,7 @@
                   </article>
                   <article class="courses__course-item course">
                     <div class="course__top-row">
-                      <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                      <h3 class="course__title">Подготовка к школе 2 уровень</h3>
                       <span class="course__popular-label">Популярно</span>
                     </div>
                     <p class="course__description">
@@ -1208,7 +1213,7 @@
                     <div class="course__bottom-row">
                       <div class="course__price-block">
                         <span class="course__discount">Скидка 15%</span>
-                        <span class="course__price">5 600 ₽</span>
+                        <span class="course__price">5 400 ₽</span>
                         <span class="course__old-price">8 900 ₽</span>
                       </div>
                       <div class="course__actions-block">
@@ -1400,7 +1405,7 @@
                   </article>
                   <article class="courses__course-item course">
                     <div class="course__top-row">
-                      <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                      <h3 class="course__title">Школьная математика</h3>
                       <span class="course__popular-label">Популярно</span>
                     </div>
                     <p class="course__description">
@@ -1570,8 +1575,8 @@
             </div>
 
             <div class="footer__contacts">
-              <a href="tel:79026903370" class="footer__phone">7 (902) 690-33-70</a>
-              <a href="mailto:auri@surgut.ru" class="footer__email">auri@surgut.ru</a>
+              <a href="tel:+79026903370" class="footer__phone">+7 (902) 690-33-70</a>
+              <a href="mailto:hello@aurischool.ru" class="footer__email">hello@aurischool.ru</a>
             </div>
 
             <div class="footer__socials">
@@ -1858,7 +1863,7 @@
         const priceEl = document.getElementById('price');
 
         titleEl.textContent = programmeName;
-        priceEl.textContent = price;
+        priceEl.textContent = `${price} ₽`;
       });
     </script>
   </body>
