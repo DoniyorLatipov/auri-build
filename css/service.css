@@ -1344,6 +1344,9 @@ button {
   background: transparent;
   min-height: 40px;
 }
+.courses__filter-btn .active-img {
+  display: none;
+}
 .courses__filter-btn.active {
   font-weight: 500;
   color: var(--color-suport);
@@ -1352,6 +1355,12 @@ button {
   padding: 6px 15px;
   border-radius: 10px;
   min-height: 40px;
+}
+.courses__filter-btn.active img {
+  display: none;
+}
+.courses__filter-btn.active .active-img {
+  display: block;
 }
 .courses__filters-right {
   display: flex;
@@ -1369,7 +1378,19 @@ button {
   background: transparent;
   min-width: 250px;
 }
+.courses__courses-wrapper {
+  overflow: hidden;
+}
+.courses__courses-content {
+  display: flex;
+  width: 200%;
+  transition: all 0.3s ease-in-out;
+}
+.courses__courses-content.active {
+  transform: translateX(-50%);
+}
 .courses__courses-list {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;

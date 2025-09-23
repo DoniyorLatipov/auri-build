@@ -512,7 +512,7 @@
                 <div class="promotion__slider-content swiper-wrapper swiper-wrapper--loop">
                   <article class="promotion__slide slide swiper-slide">
                     <div class="promotion__slide-content promotion__slide-content--green">
-                      <h4 class="promotion__slide-label promotion__slide-label--green">0₽</h4>
+                      <h4 class="promotion__slide-label promotion__slide-label--green">6 990 ₽</h4>
                       <h3 class="promotion__slide-title">«Первое занятие бесплатно»</h3>
                       <p class="promotion__slide-description">Акция для всех покупателей!</p>
                     </div>
@@ -525,9 +525,27 @@
                     </picture>
                   </article>
                   <article class="promotion__slide slide swiper-slide">
-                    <div class="promotion__slide-content promotion__slide-content--orange">
-                      <h4 class="promotion__slide-label promotion__slide-label--orange">-20%</h4>
-                      <h3 class="promotion__slide-title">«Приведи друга – получи скидку»</h3>
+                    <div class="promotion__slide-content promotion__slide-content--yellow">
+                      <h4 class="promotion__slide-label promotion__slide-label--yellow">
+                        +1 месяц
+                      </h4>
+                      <h3 class="promotion__slide-title">4-й месяц — в подарок!</h3>
+                      <p class="promotion__slide-subtitle">При оплате за 3 месяца</p>
+                      <p class="promotion__slide-description">Акция для всех покупателей!</p>
+                    </div>
+                    <picture class="promotion__slide-picture">
+                      <img
+                        src="images/promotion-2.png"
+                        alt="Девочка занимается за столом"
+                        class="promotion__slide-image"
+                      />
+                    </picture>
+                  </article>
+                  <article class="promotion__slide slide swiper-slide">
+                    <div class="promotion__slide-content promotion__slide-content--blue">
+                      <h4 class="promotion__slide-label promotion__slide-label--blue">6 990 ₽</h4>
+                      <h3 class="promotion__slide-title">Русский + Каллиграфия</h3>
+                      <p class="promotion__slide-subtitle">Читай красиво и быстро!</p>
                       <p class="promotion__slide-description">Акция для всех покупателей!</p>
                     </div>
                     <picture class="promotion__slide-picture">
@@ -539,14 +557,15 @@
                     </picture>
                   </article>
                   <article class="promotion__slide slide swiper-slide">
-                    <div class="promotion__slide-content promotion__slide-content--yellow">
-                      <h4 class="promotion__slide-label promotion__slide-label--yellow">0₽</h4>
-                      <h3 class="promotion__slide-title">«Семейная подписка»</h3>
+                    <div class="promotion__slide-content promotion__slide-content--orange">
+                      <h4 class="promotion__slide-label promotion__slide-label--orange">6 990 ₽</h4>
+                      <h3 class="promotion__slide-title">Скорочтение + Каллиграфия</h3>
+                      <p class="promotion__slide-subtitle">Читай красиво и быстро!</p>
                       <p class="promotion__slide-description">Акция для всех покупателей!</p>
                     </div>
                     <picture class="promotion__slide-picture">
                       <img
-                        src="images/promotion-2.png"
+                        src="images/promotion-4.png"
                         alt="Девочка занимается за столом"
                         class="promotion__slide-image"
                       />
@@ -593,12 +612,34 @@
             <h2 class="programmes__heading section-heading">Программы</h2>
             <div class="courses__filters">
               <div class="courses__filters-left">
-                <button type="button" class="courses__filter-btn button-icon active">
+                <button
+                  type="button"
+                  class="courses__filter-btn button-icon active"
+                  onclick="document.querySelector('.courses__filter-btn.active').classList.remove('active'); this.classList.add('active'); document.querySelector('.courses__courses-content').classList.remove('active');"
+                >
+                  <img
+                    src="images/puzzle-white.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                    class="active-img"
+                  />
                   <img src="images/puzzle.svg" alt="Пазл" width="24" height="24" />
                   Дошкольники
                 </button>
-                <button type="button" class="courses__filter-btn button-icon">
-                  <img src="images/book.svg" alt="" />
+                <button
+                  type="button"
+                  class="courses__filter-btn button-icon"
+                  onclick="document.querySelector('.courses__filter-btn.active').classList.remove('active'); this.classList.add('active'); document.querySelector('.courses__courses-content').classList.add('active');"
+                >
+                  <img
+                    class="active-img"
+                    src="images/book-white.svg"
+                    alt=""
+                    width="24"
+                    height="24"
+                  />
+                  <img src="images/book.svg" alt="" width="24" height="24" />
                   Школьники
                 </button>
               </div>
@@ -612,275 +653,572 @@
                 </select>
               </div>
             </div>
-            <div class="courses__courses-list">
-              <article class="courses__course-item course">
-                <div class="course__top-row">
-                  <h3 class="course__title">Ментальная арифметика</h3>
-                  <span class="course__popular-label">Популярно</span>
-                </div>
-                <p class="course__description">
-                  Курс улучшения умственных способностей ребенка, созданный на основе системы
-                  устного счета.
-                </p>
-                <div class="course__info-row">
-                  <span class="course__low-info">5-14 лет</span>
-                  <span class="course__low-info">8 занятий</span>
-                </div>
-                <div class="course__bottom-row">
-                  <div class="course__price-block">
-                    <span class="course__discount">Скидка 15%</span>
-                    <span class="course__price">5 400₽</span>
-                    <span class="course__old-price">8 900 ₽</span>
-                  </div>
-                  <div class="course__actions-block">
-                    <button type="button" class="course__cart-btn orange-button button-icon">
-                      <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
-                      В корзину
-                    </button>
-                    <button
-                      type="button"
-                      class="course__icon-button button-icon active"
-                      onclick="this.classList.toggle('active')"
-                    >
-                      <svg
-                        width="20"
-                        height="21"
-                        viewBox="0 0 20 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_31_314)">
-                          <path
-                            class="icon-fill"
-                            d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
-                            stroke="#FF6A14"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+            <div class="courses__courses-wrapper">
+              <div class="courses__courses-content">
+                <div class="courses__courses-list">
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Ментальная арифметика</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">5-14 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 400₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <button type="button" class="course__cart-btn orange-button button-icon">
+                          <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
+                          В корзину
+                        </button>
+                        <button
+                          type="button"
+                          class="course__icon-button button-icon active"
+                          onclick="this.classList.toggle('active')"
+                        >
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
                             fill="none"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_31_314">
-                            <rect
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_31_314)">
+                              <path
+                                class="icon-fill"
+                                d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                stroke="#FF6A14"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                fill="none"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_31_314">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.460449)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Скорочтение + Каллиграфия</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">6-8 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 600₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button type="button" class="course__cart-btn orange-button button-icon">
+                            <img
+                              src="images/card-white.svg"
+                              alt="В корзину"
                               width="20"
                               height="20"
-                              fill="white"
-                              transform="translate(0 0.460449)"
                             />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </article>
-              <article class="courses__course-item course">
-                <div class="course__top-row">
-                  <h3 class="course__title">Скорочтение + Каллиграфия</h3>
-                  <span class="course__popular-label">Популярно</span>
-                </div>
-                <p class="course__description">
-                  Курс улучшения умственных способностей ребенка, созданный на основе системы
-                  устного счета.
-                </p>
-                <div class="course__info-row">
-                  <span class="course__low-info">6-8 лет</span>
-                  <span class="course__low-info">8 занятий</span>
-                </div>
-                <div class="course__bottom-row">
-                  <div class="course__price-block">
-                    <span class="course__discount">Скидка 15%</span>
-                    <span class="course__price">5 600₽</span>
-                    <span class="course__old-price">8 900 ₽</span>
-                  </div>
-                  <div class="course__actions-block">
-                    <a href="service.html" target="_blank" rel="noopener noreferrer">
-                      <button type="button" class="course__cart-btn orange-button button-icon">
-                        <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
-                        В корзину
-                      </button>
-                    </a>
-                    <a href="service.html" target="_blank" rel="noopener noreferrer">
-                      <button
-                        type="button"
-                        class="course__icon-button button-icon active"
-                        onclick="this.classList.toggle('active')"
-                      >
-                        <svg
-                          width="20"
-                          height="21"
-                          viewBox="0 0 20 21"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g clip-path="url(#clip0_31_314)">
-                            <path
-                              class="icon-fill"
-                              d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
-                              stroke="#FF6A14"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                            В корзину
+                          </button>
+                        </a>
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button
+                            type="button"
+                            class="course__icon-button button-icon active"
+                            onclick="this.classList.toggle('active')"
+                          >
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
                               fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_31_314)">
+                                <path
+                                  class="icon-fill"
+                                  d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                  stroke="#FF6A14"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  fill="none"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_31_314">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.460449)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">6-9 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 600 ₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button type="button" class="course__cart-btn orange-button button-icon">
+                            <img
+                              src="images/card-white.svg"
+                              alt="В корзину"
+                              width="20"
+                              height="20"
                             />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_31_314">
-                              <rect
-                                width="20"
-                                height="20"
-                                fill="white"
-                                transform="translate(0 0.460449)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="courses__course-item course">
-                <div class="course__top-row">
-                  <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
-                  <span class="course__popular-label">Популярно</span>
-                </div>
-                <p class="course__description">
-                  Курс улучшения умственных способностей ребенка, созданный на основе системы
-                  устного счета.
-                </p>
-                <div class="course__info-row">
-                  <span class="course__low-info">6-9 лет</span>
-                  <span class="course__low-info">8 занятий</span>
-                </div>
-                <div class="course__bottom-row">
-                  <div class="course__price-block">
-                    <span class="course__discount">Скидка 15%</span>
-                    <span class="course__price">5 600 ₽</span>
-                    <span class="course__old-price">8 900 ₽</span>
-                  </div>
-                  <div class="course__actions-block">
-                    <a href="service.html" target="_blank" rel="noopener noreferrer">
-                      <button type="button" class="course__cart-btn orange-button button-icon">
-                        <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
-                        В корзину
-                      </button>
-                    </a>
-                    <a href="service.html" target="_blank" rel="noopener noreferrer">
-                      <button
-                        type="button"
-                        class="course__icon-button button-icon active"
-                        onclick="this.classList.toggle('active')"
-                      >
-                        <svg
-                          width="20"
-                          height="21"
-                          viewBox="0 0 20 21"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g clip-path="url(#clip0_31_314)">
-                            <path
-                              class="icon-fill"
-                              d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
-                              stroke="#FF6A14"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                            В корзину
+                          </button>
+                        </a>
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button
+                            type="button"
+                            class="course__icon-button button-icon active"
+                            onclick="this.classList.toggle('active')"
+                          >
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
                               fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_31_314)">
+                                <path
+                                  class="icon-fill"
+                                  d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                  stroke="#FF6A14"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  fill="none"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_31_314">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.460449)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">6-9 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 600 ₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button type="button" class="course__cart-btn orange-button button-icon">
+                            <img
+                              src="images/card-white.svg"
+                              alt="В корзину"
+                              width="20"
+                              height="20"
                             />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_31_314">
-                              <rect
-                                width="20"
-                                height="20"
-                                fill="white"
-                                transform="translate(0 0.460449)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </article>
-              <article class="courses__course-item course">
-                <div class="course__top-row">
-                  <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
-                  <span class="course__popular-label">Популярно</span>
-                </div>
-                <p class="course__description">
-                  Курс улучшения умственных способностей ребенка, созданный на основе системы
-                  устного счета.
-                </p>
-                <div class="course__info-row">
-                  <span class="course__low-info">6-9 лет</span>
-                  <span class="course__low-info">8 занятий</span>
-                </div>
-                <div class="course__bottom-row">
-                  <div class="course__price-block">
-                    <span class="course__discount">Скидка 15%</span>
-                    <span class="course__price">5 600 ₽</span>
-                    <span class="course__old-price">8 900 ₽</span>
-                  </div>
-                  <div class="course__actions-block">
-                    <a href="service.html" target="_blank" rel="noopener noreferrer">
-                      <button type="button" class="course__cart-btn orange-button button-icon">
-                        <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
-                        В корзину
-                      </button>
-                    </a>
-                    <a href="service.html" target="_blank" rel="noopener noreferrer">
-                      <button
-                        type="button"
-                        class="course__icon-button button-icon active"
-                        onclick="this.classList.toggle('active')"
-                      >
-                        <svg
-                          width="20"
-                          height="21"
-                          viewBox="0 0 20 21"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g clip-path="url(#clip0_31_314)">
-                            <path
-                              class="icon-fill"
-                              d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
-                              stroke="#FF6A14"
-                              stroke-width="1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                            В корзину
+                          </button>
+                        </a>
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button
+                            type="button"
+                            class="course__icon-button button-icon active"
+                            onclick="this.classList.toggle('active')"
+                          >
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
                               fill="none"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_31_314">
-                              <rect
-                                width="20"
-                                height="20"
-                                fill="white"
-                                transform="translate(0 0.460449)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </button>
-                    </a>
-                  </div>
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_31_314)">
+                                <path
+                                  class="icon-fill"
+                                  d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                  stroke="#FF6A14"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  fill="none"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_31_314">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.460449)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
                 </div>
-              </article>
+                <div class="courses__courses-list">
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Ментальная арифметика</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">5-14 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 400₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <button type="button" class="course__cart-btn orange-button button-icon">
+                          <img src="images/card-white.svg" alt="В корзину" width="20" height="20" />
+                          В корзину
+                        </button>
+                        <button
+                          type="button"
+                          class="course__icon-button button-icon active"
+                          onclick="this.classList.toggle('active')"
+                        >
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_31_314)">
+                              <path
+                                class="icon-fill"
+                                d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                stroke="#FF6A14"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                fill="none"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_31_314">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.460449)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Скорочтение + Каллиграфия</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">6-8 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 600₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button type="button" class="course__cart-btn orange-button button-icon">
+                            <img
+                              src="images/card-white.svg"
+                              alt="В корзину"
+                              width="20"
+                              height="20"
+                            />
+                            В корзину
+                          </button>
+                        </a>
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button
+                            type="button"
+                            class="course__icon-button button-icon active"
+                            onclick="this.classList.toggle('active')"
+                          >
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_31_314)">
+                                <path
+                                  class="icon-fill"
+                                  d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                  stroke="#FF6A14"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  fill="none"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_31_314">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.460449)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">6-9 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 600 ₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button type="button" class="course__cart-btn orange-button button-icon">
+                            <img
+                              src="images/card-white.svg"
+                              alt="В корзину"
+                              width="20"
+                              height="20"
+                            />
+                            В корзину
+                          </button>
+                        </a>
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button
+                            type="button"
+                            class="course__icon-button button-icon active"
+                            onclick="this.classList.toggle('active')"
+                          >
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_31_314)">
+                                <path
+                                  class="icon-fill"
+                                  d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                  stroke="#FF6A14"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  fill="none"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_31_314">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.460449)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="courses__course-item course">
+                    <div class="course__top-row">
+                      <h3 class="course__title">Smartyчтение + Мнемотехника</h3>
+                      <span class="course__popular-label">Популярно</span>
+                    </div>
+                    <p class="course__description">
+                      Курс улучшения умственных способностей ребенка, созданный на основе системы
+                      устного счета.
+                    </p>
+                    <div class="course__info-row">
+                      <span class="course__low-info">6-9 лет</span>
+                      <span class="course__low-info">8 занятий</span>
+                    </div>
+                    <div class="course__bottom-row">
+                      <div class="course__price-block">
+                        <span class="course__discount">Скидка 15%</span>
+                        <span class="course__price">5 600 ₽</span>
+                        <span class="course__old-price">8 900 ₽</span>
+                      </div>
+                      <div class="course__actions-block">
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button type="button" class="course__cart-btn orange-button button-icon">
+                            <img
+                              src="images/card-white.svg"
+                              alt="В корзину"
+                              width="20"
+                              height="20"
+                            />
+                            В корзину
+                          </button>
+                        </a>
+                        <a href="service.html" target="_blank" rel="noopener noreferrer">
+                          <button
+                            type="button"
+                            class="course__icon-button button-icon active"
+                            onclick="this.classList.toggle('active')"
+                          >
+                            <svg
+                              width="20"
+                              height="21"
+                              viewBox="0 0 20 21"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_31_314)">
+                                <path
+                                  class="icon-fill"
+                                  d="M15.3166 8.40266H12.5364C12.1776 8.40266 11.8189 8.11976 11.8189 7.64826V2.46182C11.8189 1.61313 10.8323 1.14163 10.2045 1.70743L4.01612 10.6658C3.38831 11.3259 3.74706 12.4575 4.64392 12.4575H7.87264C8.23139 12.4575 8.59014 12.7404 8.59014 13.2119V18.3984C8.59014 19.3413 9.57669 19.8128 10.2045 19.1527L15.9444 10.2886C16.6619 9.53424 16.2135 8.40266 15.3166 8.40266Z"
+                                  stroke="#FF6A14"
+                                  stroke-width="1.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  fill="none"
+                                />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_31_314">
+                                  <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0 0.460449)"
+                                  />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
             </div>
             <div class="courses__more-btn-wrapper">
-              <a href="!#" target="_blank">
-                <button type="button" class="courses__more-btn transparent-button button-icon">
-                  Смотреть все
-                  <img src="images/more-arrow-right.svg" alt="Узнать больше" />
-                </button>
-              </a>
+              <button
+                type="button"
+                class="courses__more-btn transparent-button button-icon modal-button"
+              >
+                Смотреть все
+                <img src="images/more-arrow-right.svg" alt="Узнать больше" />
+              </button>
             </div>
           </div>
         </section>
