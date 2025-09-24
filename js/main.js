@@ -13,7 +13,8 @@ handleForm();
 const contactButtons = document.querySelectorAll('.modal-button');
 
 contactButtons.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
     openModal();
   });
 });
@@ -32,18 +33,4 @@ window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeModal();
   }
-});
-
-document.querySelectorAll('.course').forEach((course) => {
-  course.addEventListener('click', (e) => {
-    if (
-      e.target.classList.contains('course__cart-btn') ||
-      e.target.classList.contains('course__icon-button')
-    ) {
-      openModal();
-      return;
-    }
-
-    window.location.href = 'service.html';
-  });
 });
