@@ -65,8 +65,8 @@ video {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
 }
 
 footer,
@@ -95,7 +95,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -112,65 +112,58 @@ input {
 /* inter-300 - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/inter-v19-cyrillic-300.woff2') format('woff2'),
-    url('../fonts/inter-v19-cyrillic-300.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/inter-v19-cyrillic-300.woff2") format("woff2"), url("../fonts/inter-v19-cyrillic-300.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* inter-regular - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v19-cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/inter-v19-cyrillic-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/inter-v19-cyrillic-regular.woff2") format("woff2"), url("../fonts/inter-v19-cyrillic-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* inter-500 - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/inter-v19-cyrillic-500.woff2') format('woff2'),
-    url('../fonts/inter-v19-cyrillic-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/inter-v19-cyrillic-500.woff2") format("woff2"), url("../fonts/inter-v19-cyrillic-500.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* inter-600 - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/inter-v19-cyrillic-600.woff2') format('woff2'),
-    url('../fonts/inter-v19-cyrillic-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/inter-v19-cyrillic-600.woff2") format("woff2"), url("../fonts/inter-v19-cyrillic-600.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* inter-700 - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/inter-v19-cyrillic-700.woff2') format('woff2'),
-    url('../fonts/inter-v19-cyrillic-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/inter-v19-cyrillic-700.woff2") format("woff2"), url("../fonts/inter-v19-cyrillic-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* roboto-regular - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v48-cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/roboto-v48-cyrillic-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/roboto-v48-cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v48-cyrillic-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* roboto-500 - cyrillic */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/roboto-v48-cyrillic-500.woff2') format('woff2'),
-    url('../fonts/roboto-v48-cyrillic-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  src: url("../fonts/roboto-v48-cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v48-cyrillic-500.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 :root {
   --color-primary: #343434;
@@ -191,7 +184,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
@@ -210,7 +203,7 @@ a {
 }
 
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   cursor: pointer;
 }
@@ -435,7 +428,7 @@ button {
 .header.prepared.active {
   transform: translateY(0);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border-bottom: 1px solid #f0f0f0;
   background: rgba(255, 255, 255, 0.85);
 }
@@ -617,7 +610,7 @@ button {
     width: -moz-fit-content;
     width: fit-content;
     -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
+            backdrop-filter: none !important;
     background: transparent !important;
     z-index: 200;
   }
@@ -735,7 +728,7 @@ button {
 }
 .main-nav__btn {
   cursor: pointer;
-  background: url('../images/arrow-right--black.svg') no-repeat;
+  background: url("../../images/arrow-right--black.svg") no-repeat;
   background-position: center right 20px;
   background-size: 15px 15px;
 }
@@ -754,7 +747,7 @@ button {
 .main-nav__link--underline {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 .main-nav__section-icons {
   display: flex;
@@ -784,7 +777,7 @@ button {
   padding-left: 50px;
   margin: 30px 0 20px;
   border-bottom: #d9d9d9 1px solid;
-  background: url('../images/arrow-left--black.svg') no-repeat;
+  background: url("../../images/arrow-left--black.svg") no-repeat;
   background-position: center left 20px;
 }
 @media (max-width: 1250px) {
@@ -885,7 +878,7 @@ button {
     width: 100%;
     max-width: 500px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
   }
   .intro__buttons {
@@ -903,7 +896,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 20px;
-  column-gap: 20px;
+       column-gap: 20px;
 }
 .teacher__bio {
   display: flex;
@@ -915,9 +908,9 @@ button {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: top;
-  object-position: top;
+     object-position: top;
   border-radius: 12px 12px 0 0;
 }
 .teacher__content {
@@ -937,8 +930,7 @@ button {
   background: #fdfdfd;
   align-items: center;
   justify-content: space-between;
-  background-image: url('../images/service-1-certificate-bg-green.png'),
-    url('../images/service-1-certificate-bg-orange.png');
+  background-image: url("../../images/service-1-certificate-bg-green.png"), url("../../images/service-1-certificate-bg-orange.png");
   background-position: right top, right bottom;
   background-repeat: no-repeat;
   background-size: 167px 198px, 146px 184px;
@@ -961,7 +953,7 @@ button {
     grid-template-rows: auto;
     row-gap: 20px;
     -moz-column-gap: 0;
-    column-gap: 0;
+         column-gap: 0;
   }
   .teacher__img {
     height: 100%;
@@ -1014,9 +1006,9 @@ button {
 .methods__slide-image {
   max-width: 250px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   border-radius: 12px 0 0 12px;
   width: 100%;
   height: 100%;
@@ -1030,7 +1022,7 @@ button {
 }
 .methods__slider-wrapper::before {
   position: absolute;
-  content: '';
+  content: "";
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   left: 0;
   top: 0;
@@ -1040,7 +1032,7 @@ button {
 }
 .methods__slider-wrapper::after {
   position: absolute;
-  content: '';
+  content: "";
   background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   right: 0;
   top: 0;
@@ -1081,8 +1073,7 @@ button {
   .methods__slider-arrows {
     width: 100%;
   }
-  .methods__slider-wrapper::before,
-  .methods__slider-wrapper::after {
+  .methods__slider-wrapper::before, .methods__slider-wrapper::after {
     display: none;
   }
   .methods__slider-dots {
@@ -1111,7 +1102,7 @@ button {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     -moz-column-gap: 0;
-    column-gap: 0;
+         column-gap: 0;
   }
   .results__item {
     padding: 20px;
@@ -1147,7 +1138,7 @@ button {
   border-radius: 12px 12px 0 0;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .affiliate__content {
   padding: 20px;
@@ -1210,7 +1201,7 @@ button {
   display: flex;
   align-items: center;
   -moz-column-gap: 25px;
-  column-gap: 25px;
+       column-gap: 25px;
   row-gap: 6px;
 }
 .comment__profile-info {
@@ -1255,9 +1246,9 @@ button {
   position: relative;
 }
 .benefit__content::after {
-  content: '';
+  content: "";
   position: absolute;
-  background-image: url('../images/benefit-bg.png');
+  background-image: url("../../images/benefit-bg.png");
   width: 125px;
   height: 125px;
   top: 50%;
@@ -1418,8 +1409,7 @@ button {
     flex-direction: column;
     gap: 40px;
   }
-  .courses__filters-left,
-  .courses__filters-right {
+  .courses__filters-left, .courses__filters-right {
     width: 100%;
   }
   .courses__filter-btn {
@@ -1671,7 +1661,7 @@ button {
   font-size: 14px;
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   color: #ff6a14;
 }
 
@@ -1798,7 +1788,7 @@ button {
 .form__link {
   text-decoration: underline;
   -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
   color: #ff6a14;
 }
 
@@ -1835,10 +1825,10 @@ button {
   transition: all 0.3s ease-in-out;
 }
 .select-styled:after {
-  content: '';
+  content: "";
   width: 18px;
   height: 18px;
-  background: url('../images/select-arrow-down.svg') no-repeat center center/cover;
+  background: url("../../images/select-arrow-down.svg") no-repeat center center/cover;
   position: absolute;
   top: 50%;
   transform: translateY(-50%) scale(1);
@@ -1849,12 +1839,10 @@ button {
 .select-styled:hover {
   background-color: rgb(241.25, 241.25, 241.25);
 }
-.select-styled:active,
-.select-styled.active {
+.select-styled:active, .select-styled.active {
   background: #fefefe;
 }
-.select-styled:active:after,
-.select-styled.active:after {
+.select-styled:active:after, .select-styled.active:after {
   transform: translateY(-50%) scale(-1);
 }
 
@@ -1879,12 +1867,11 @@ button {
   border-top: 1px solid #d9d9d9;
   transition: all 0.3s ease-in-out;
 }
-.select-options li:hover,
-.select-options li.is-selected {
+.select-options li:hover, .select-options li.is-selected {
   color: var(--color-secondary);
   background: #fff2e0;
 }
-.select-options li[rel='hide'] {
+.select-options li[rel=hide] {
   display: none;
 }
 .select-options li:nth-child(2) {
